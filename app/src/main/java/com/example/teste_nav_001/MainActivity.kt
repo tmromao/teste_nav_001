@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.example.teste_nav_001.ui.MainScreen
 import com.example.teste_nav_001.ui.ROUTE_B
 import com.example.teste_nav_001.ui.Screen
 import com.example.teste_nav_001.ui.SetupNavGraph
@@ -40,7 +41,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    SetupNavGraph(navController = navController)
+                    //SetupNavGraph(navController = navController)
+                    MainScreen()
                 }
             }
         }
